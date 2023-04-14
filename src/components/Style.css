@@ -1,0 +1,211 @@
+body {
+  font-family: 'Helvetica', sans-serif;
+  background-image: url("../img/Rick_and_Morty_Background.jpg"); 
+     /* background-color: #878B91 ;  */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative ;
+    height: 100vh;
+    z-index: 1;
+    margin-top: 60px;
+    
+}
+
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: rgba(23, 25, 29, 0.1) 0px 0px 6px, rgba(23, 25, 29, 0.1) 0px 6px 12px; 
+  padding: 0 20px;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.err {
+  opacity: 1;
+  font-size: 10px;
+  position: absolute;
+  padding: 0px 15px;
+  transition: opacity 0 2s ease-in-out; ;
+
+}
+.formBack {
+  background-color: #ffffffc2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:absolute;;
+    border-radius: 30px;
+    padding: 10px 10px 10px 10px;
+    z-index: 30;
+    margin-top: 20%;
+    margin-left: 35%;
+   
+    
+}
+
+.inputNumber {
+  background-color: #56565623;
+ 
+  width: 30%;
+  margin: auto;
+  padding-left: 8%;
+  border-radius: 30px;
+  
+}
+
+.inputContainer {
+  padding-right: 30px;
+    display: block;
+  flex-direction: column;
+  margin: 20px;
+  position: relative;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #878B91;
+    background-color: transparent;
+    color: #242424;
+    outline: none;
+  }
+  
+  input:focus {
+    border-bottom: 2px solid #0078D7;
+  }
+
+  h2 {
+    font-size: medium;
+    color:#fafafa
+  }
+
+ 
+
+  .loginButtonContainer {
+    display: inline-block;
+    position: relative;
+    padding:0px 5px;
+  }
+  
+  
+  .loginButton {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: #0078D7;
+    border: none;
+    margin-left: 10px;
+    margin-right: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 30px;
+    
+  }
+  
+  
+  .loginButton:hover {
+    background-color: #106EBE;
+  }
+  
+  
+  .loginButton:active {
+    transform: translateY(1px);
+  }
+  
+  .tarjeta {
+    position:flex;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    height: 350px;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 200;
+  }
+  
+  .tarjeta:hover {
+    background-color: #fafafa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+  }
+
+  
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 90;
+  }
+
+.backTarjeta {
+  display: flex;
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  margin-left: -20px;
+  margin-top: -20px;
+  border-radius: 30px 30px 0px 0px;
+
+}
+
+  
+  
+
+
+.backTarjeta:hover {
+  filter: blur(0px);
+}
+
+
+
+  .xButton {
+    position: relative;
+    font-size: 10px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: #0076d76d;
+    border-radius: 10px;
+    z-index: 10;
+    opacity: 0.8;
+    
+  }
+
+  .Informacion {
+    position: relative;
+    display: block;
+    margin-top: 210px;
+    padding-top: -1px;
+    align-items: center;
+  }
+ 
+  .Name {
+    color:#106EBE;
+    padding-top: auto;
+  }
+
+  .Info {
+    font-size: 14px;
+    margin-top: -10px;
+  }
