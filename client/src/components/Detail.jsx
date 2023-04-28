@@ -4,8 +4,8 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 
 
-const URL_BASE = 'https://be-a-rym.up.railway.app/api/character';
-const API_KEY =  'a417fc96b973.5d346bf94ed39d4f025e'
+// const URL_BASE = 'https://be-a-rym.up.railway.app/api/character';
+// const API_KEY =  'a417fc96b973.5d346bf94ed39d4f025e'
 
 
 
@@ -15,7 +15,7 @@ const Detail = () => {
     const [character, setCharacter] = useState({});
     
     useEffect(() => {
-        axios(`${URL_BASE}/${id}?key=${API_KEY}`).then(({ data }) => {
+        axios(`http://localhost:3001/rickandmorty/character/${id}`).then(({ data }) => {
            if (data.name) {
               setCharacter(data);
            } else {

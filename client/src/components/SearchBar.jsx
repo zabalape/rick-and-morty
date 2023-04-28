@@ -10,7 +10,7 @@ export default function SearchBar({onSearch}) {
    return (
       
       <div className="inputContainer"> 
-           <input className="inputNumber" type="number" onChange={handleChange}/>
+           <input className="inputNumber" type="text" onChange={handleChange}/>
            <button className="loginButton" onClick={()=>{ onSearch(id); setId(id)}}>Agregar</button>
       </div>
          
